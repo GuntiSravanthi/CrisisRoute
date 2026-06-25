@@ -286,8 +286,4 @@ Maps:      OpenStreetMap, Leaflet
 
 ---
 
-## License
 
-Educational project for AIML engineering students.
-
-**Built with ❤️ for disaster preparedness and community safety.**
