@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-crisis-dark text-slate-100 font-sans antialiased;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-crisis-card/80 backdrop-blur-md border border-crisis-border rounded-2xl shadow-xl;
+  }
+
+  .btn-primary {
+    @apply bg-gradient-to-r from-crisis-red to-crisis-orange text-white font-semibold px-6 py-2.5 rounded-xl
+           hover:opacity-90 transition-all duration-200 shadow-lg shadow-red-900/30;
+  }
+
+  .btn-secondary {
+    @apply bg-crisis-card border border-crisis-border text-slate-200 font-medium px-6 py-2.5 rounded-xl
+           hover:bg-slate-700 transition-all duration-200;
+  }
+
+  .input-field {
+    @apply w-full bg-slate-800/50 border border-crisis-border rounded-xl px-4 py-3 text-slate-100
+           placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-crisis-red/50 focus:border-crisis-red;
+  }
+
+  .stat-card {
+    @apply glass-card p-6 hover:border-crisis-red/30 transition-all duration-300;
+  }
+}
+
+.leaflet-container {
+  background: #1e293b !important;
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 3px;
+}
